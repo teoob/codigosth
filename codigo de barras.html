@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escanear Código de Barras</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ruta correcta para styles.css -->
+</head>
+<body>
+    <div class="container">
+        <h1>Escanear Código de Barras</h1>
+        <p>Escanea un código de barras con tu celular</p>
+        
+        <!-- Sección para mostrar el nombre y precio del producto -->
+        <div id="producto-info" class="hidden">
+            <h2 id="nombre-producto"></h2>
+            <p id="precio-producto"></p>
+        </div>
+
+        <!-- Botón para abrir el escáner -->
+        <button id="scanner">Escanear Código de Barras</button>
+    </div>
+
+    <!-- Librería ZXing para escanear el código de barras -->
+    <script src="https://cdn.jsdelivr.net/npm/@zxing/library@0.18.7/umd/index.min.js"></script>
+
+    <!-- Archivo JavaScript con la lógica -->
+    <script src="app.js"></script>  <!-- Ruta correcta para app.js -->
+</body>
+</html>
